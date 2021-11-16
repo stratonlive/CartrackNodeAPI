@@ -1,0 +1,26 @@
+{
+    "preset": "ts-jest",
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+        "src/*.{ts, js}"
+    ],
+    "testEnvironment": "node",
+    "testMatch": [
+        "**/__tests__/**/*.ts",
+        "**/?(*.)+(spec|test).ts"
+    ],
+    "resetMocks": true,
+    "clearMocks": true,
+    "moduleFileExtensions": [
+        "ts",
+        "js"
+    ],
+    "moduleNameMapper": {
+        "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "moduleDirectories": [
+        "node_modules",
+        "src"
+    ]
+    
+}
