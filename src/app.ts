@@ -32,7 +32,6 @@ const server = http.createServer((req: RequestType, res: any) => {
 				})
 			);
 		}
-		console.log(`${ip} connected`);
 	} else {
 		verifyCache(ip);
 		counthits = caching.get(ip);
